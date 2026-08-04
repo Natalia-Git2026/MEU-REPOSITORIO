@@ -70,6 +70,7 @@
     border-color: rgba(109,40,217,.45);
     box-shadow: 0 30px 60px -24px rgba(76,29,149,.55), 0 0 34px -10px var(--glow-blue), 0 0 34px -6px var(--glow-purple);
   }
+  .card-depth:hover img { transform: scale(1.06); }
 
   /* ---- botões neon (CTA laranja) ---- */
   .btn-neon {
@@ -133,7 +134,7 @@
   /* responsivo */
   @media (max-width: 900px) {
     .hero-grid { grid-template-columns: 1fr !important; gap: 44px !important; padding: 52px 24px 64px !important; }
-    .ad-grid, .svc-grid, .steps-grid, .about-grid { grid-template-columns: 1fr !important; }
+    .ad-grid, .svc-grid, .steps-grid, .about-grid, .proj-grid { grid-template-columns: 1fr !important; }
     .h1-hero { font-size: 40px !important; }
     .h2-big { font-size: 32px !important; }
     .sec-pad { padding: 64px 24px !important; }
@@ -177,6 +178,7 @@
       <a href="#top" class="grad-text" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px; letter-spacing: -.02em;">Natália Félix</a>
       <nav style="display: flex; align-items: center; gap: 26px;">
         <a href="#servicos" style="font-weight: 600; font-size: 15px; color: var(--text-muted);">Serviços</a>
+        <a href="#projetos" style="font-weight: 600; font-size: 15px; color: var(--text-muted);">Projetos</a>
         <a href="https://wa.me/5588996419568?text=Oi!%20Vi%20o%20seu%20portf%C3%B3lio%20e%20queria%20saber%20mais." target="_blank" rel="noopener" class="btn-neon" style="display: inline-flex; align-items: center; gap: 9px; color: #fff; font-weight: 700; font-size: 15px; padding: 11px 20px; border-radius: 999px;">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="#fff"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.85 9.85 0 001.599 5.283l-1 3.652 3.891-1.634zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.074-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.414z"/></svg>
           Chamar no WhatsApp
@@ -312,6 +314,48 @@
           </div>
           <h3 style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px; margin: 0 0 10px; color: var(--text);">Sistema sob medida</h3>
           <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: var(--text-muted);">Agenda, cadastro e controle do seu jeito, num só lugar. Chega de anotar tudo no caderno e perder informação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projetos">
+    <div class="sec-pad" style="max-width: 1180px; margin: 0 auto; padding: 88px 28px;">
+      <span style="font-weight: 700; font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: #a78bfa;">Projetos</span>
+      <h2 class="h2-big" style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 40px; line-height: 1.08; letter-spacing: -.02em; margin: 14px 0 0; max-width: 560px; color: var(--text);">Um pouco do que já coloquei no ar</h2>
+      <p style="font-size: 17px; line-height: 1.6; color: var(--text-muted); margin: 14px 0 0; max-width: 560px;">Trabalhos que mostram como eu penso interface, código e experiência do usuário.</p>
+      <div class="proj-grid" style="display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; margin-top: 48px;">
+        <div class="glass card-depth" style="border-radius: 20px; overflow: hidden;">
+          <div style="display: flex; align-items: center; gap: 8px; padding: 14px 18px; background: rgba(11,18,38,.6); border-bottom: 1px solid var(--border-glass);">
+            <span style="width: 10px; height: 10px; border-radius: 50%; background: #f87171;"></span>
+            <span style="width: 10px; height: 10px; border-radius: 50%; background: #fbbf24;"></span>
+            <span style="width: 10px; height: 10px; border-radius: 50%; background: #34d399;"></span>
+            <span style="margin-left: 8px; font-size: 12.5px; color: var(--text-faint); font-family: monospace;">ecommerce-syntaxwear.vercel.app</span>
+          </div>
+          <a href="https://ecommerce-syntaxwear.vercel.app/" target="_blank" rel="noopener" style="display: block; aspect-ratio: 16/10; overflow: hidden;">
+            <img src="./assets/syntaxwear-cover.jpg" alt="Capa do projeto SyntaxWear" style="width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform .5s ease;">
+          </a>
+          <div style="padding: 28px;">
+            <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px;">
+              <span class="glass" style="font-size: 11.5px; font-weight: 700; padding: 5px 11px; border-radius: 999px; color: #c4b5fd;">HTML5</span>
+              <span class="glass" style="font-size: 11.5px; font-weight: 700; padding: 5px 11px; border-radius: 999px; color: #c4b5fd;">CSS3</span>
+              <span class="glass" style="font-size: 11.5px; font-weight: 700; padding: 5px 11px; border-radius: 999px; color: #c4b5fd;">Responsivo</span>
+            </div>
+            <h3 style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 21px; margin: 0 0 10px; color: var(--text);">SyntaxWear — E-commerce de Sneakers</h3>
+            <p style="margin: 0; font-size: 15.5px; line-height: 1.6; color: var(--text-muted);">Landing page moderna para uma loja virtual de tênis e sneakers, desenvolvida com HTML5 e CSS3. O projeto foi criado com foco em responsividade, organização de código e boas práticas de desenvolvimento Front-end, servindo como estudo para construção de interfaces modernas de e-commerce.</p>
+            <a href="https://ecommerce-syntaxwear.vercel.app/" target="_blank" rel="noopener" class="hv-lift" style="display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; font-weight: 700; font-size: 15px; color: #c4b5fd;">
+              Ver projeto ao vivo
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="glass" style="border-radius: 20px; padding: 28px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 10px; border-style: dashed; border-color: rgba(248,250,252,.14);">
+          <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, rgba(76,29,149,.35), rgba(109,40,217,.25)); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px rgba(109,40,217,.25);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+          </div>
+          <h3 style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 700; font-size: 19px; margin: 6px 0 0; color: var(--text);">Mais projetos a caminho</h3>
+          <p style="margin: 0; font-size: 15px; line-height: 1.6; color: var(--text-faint);">Estou sempre construindo. Em breve novos sites, agentes e sistemas entram aqui.</p>
         </div>
       </div>
     </div>
